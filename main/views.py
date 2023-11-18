@@ -18,27 +18,6 @@ def home(request):
     return render(request, template_name='home.html')
 
 
-def signupview(request):
-    if request.method == 'POST':
-        first_name = request.POST['first_name']
-        last_name = request.POST['last_name']
-        email = request.POST['email']
-        user = request.POST['username']
-        password = request.POST['password']
-        c_password = request.POST['c_password']
-        if password == c_password:
-            username = User.objects.create_user(user, email, password)
-            profile = UserModel(first_name=first_name, last_name=last_name, email=email, user=user, password=password)
-            profile.save()
-            login(request, username)
-            return redirect('home')
-    return render(request, template_name='sign-up.html')
-
-
-def loginview(request):
-    return render(request, template_name='login.html')
-
-
 def contact_view(request):
     if request.method == 'POST':
         first_name = request.POST['first_name']

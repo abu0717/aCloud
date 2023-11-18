@@ -13,14 +13,13 @@
     <div class="d-flex justify-content-center align-items-center mt-5 section-1">
         <div class="form-container">
             <p class="title">Sign Up</p>
-            <form class="form" method="POST">
-                {% csrf_token %}
-              <input type="text" class="input" placeholder="first_name">
-              <input type="text" class="input" placeholder="last_name">
-              <input type="email" class="input" placeholder="email">
-              <input type="text" class="input" placeholder="username">
-              <input type="password" class="input" placeholder="password">
-              <input type="password" class="input" placeholder="confirm password">  
+            <form class="form" method="POST" action="{% url 'sign-up' %}">{% csrf_token %}
+              <input type="text" class="input" placeholder="first_name" name="first_name">
+              <input type="text" class="input" placeholder="last_name" name="last_name">
+              <input type="email" class="input" placeholder="email" name="email">
+              <input type="text" class="input" placeholder="username" name="username">
+              <input type="password" class="input" placeholder="password" name="password">
+              <input type="password" class="input" placeholder="confirm_password" name="confirm_password">
               <button class="form-btn">Log in</button>
             </form>
             <p class="sign-up-label">
