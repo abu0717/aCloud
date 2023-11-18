@@ -1,0 +1,223 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'main/bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/prewiew.css' %}">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <a href="" class="logo"><img src="{% static 'main/img/alogo.png' %}" class="logo" alt=""></a>
+        
+        <input type="checkbox" name="" id="check">
+        <label for="check" class="icons">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <i class="fa-solid fa-xmark" id="x-icon"></i>
+        </label>
+
+        <!-- Navbar -->
+        <nav class="navbarr">
+            <a href="" class="nav-link fw-bold">
+                Why aCloud ?
+            </a>
+            <a href="" class="nav-link fw-bold">
+                Pricing            
+            </a>    
+            <a href="" class="nav-link fw-bold">
+                Contact
+            </a>
+            <a href="{% url 'sign-up' %}" class="nav-link fw-bold">
+                Sign Up
+            </a>
+            <a href="{% url 'login' %}" class="nav-link fw-bold">
+                Login
+            </a>
+        </nav>
+
+        <!-- End Navbar -->
+    </header>
+    <div class="main-img">
+        <div class=" main-text">
+            <div class="texts">
+              <h1 class="main-text-h">
+                Securely collaborate on your content anywhere, anytime
+            </h1>
+            <br>
+            <p class="main-text-p">
+                With aCloud, you get a full suite of tools designed to help you create, share, manage, and track content more efficiently. Plus, proven cloud storage you can trust.
+            </p>
+            </div>
+        </div>            
+    </div>
+    <!-- endheader -->
+    
+    <!-- main -->
+    <main class="main">
+        <div class="container w-100 main-section-1">
+            <h1 class="text-center pt-5 sec-h1 text-light">What can you do with aCloud?</h1>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card border-0 cards">
+                        <img src="{% static 'main/img/Protect-main.svg' %}" class="card-img-top " alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title fw-bolder text-light">Store and protect your files</h6>
+                          <p class="card-text text-light">Get the storage you and your teams need with security features like file recovery, password protection, watermarking, and viewer history.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card border-0 cards">
+                        <img src="{% static 'main/img/Shared-main.svg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title fw-bolder text-light">Stay in control of shared content</h6>
+                          <p class="card-text text-light">Trackable links show when someone has opened a shared file and how long they’ve engaged with it. Plus, you can turn off access for any individual at any time without affecting others’ permissions.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card border-0 cards" >
+                        <img src="{% static 'main/img/Collaborate-main.svg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title fw-bolder text-light">Collaborate on your work</h6>
+                          <p class="card-text text-light">Directly edit PDFs and use video tools to streamline feedback and approval processes.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card border-0 cards" >
+                        <img src="{% static 'main/img/ManageBusiness-main.svg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title text-light">Manage your business</h6>
+                          <p class="card-text text-light">Automate manual processes with tools like eSignature templates, which let you reuse documents in seconds.</p>
+                        </div>
+                      </div>
+                </div>
+              </div>
+              <div class="section-img">
+
+              </div>
+              <div class="section-2 mt-5">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card border-0 cards" >
+                            <div class="card-body mt-5 ms-auto me-auto cardss">
+                              <h1 class="card-title text-light">1B+</h1>
+                              <br>
+                              <h6 class="card-title text-light">mobile app downloads</h6>
+                              <p class="card-text text-light">with Editors’ Choice Awards from the Google Play and Apple App Store.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card border-0 cards" >
+                            <div class="card-body mt-5 ms-auto me-auto cardss">
+                              <h1 class="card-title text-light">600k+</h1>
+                              <br>
+                              <h6 class="card-title text-light">teams globally</h6>
+                              <p class="card-text text-light">use aCloud to share work, safeguard content, and grow their business.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card border-0 cards" >
+                            <div class="card-body mt-5 ms-auto me-auto cardss">
+                              <h1 class="card-title text-light">4.5B</h1>
+                              <br>
+                              <h6 class="card-title text-light">connections and counting</h6>
+                              <p class="card-text text-light">created through aCloud file sharing.</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </main>
+    <!-- endmain -->
+    <!-- footer -->
+    <footer>
+        <div class="section-footer">
+            <div class="container">
+                <!-- Grid container -->
+    <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <img src="{% static '/main/img/alogo.png' %}" class="w-25 mt-3 mb-3" alt="">
+  
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+              aliquam voluptatem veniam, est atque cumque eum delectus sint!
+            </p>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white">aCloud</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0 text-white">Contact</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="{% url 'contact-us' %}" class="text-white nav-link">Contact Us</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white nav-link">Help Center</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white nav-link">Privacy&Terms</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white nav-link">404 Not found</a>
+              </li>
+            </ul>
+            
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-white" href="home.html">aCloud</a>
+      </div>
+      <!-- Copyright -->
+            </div>
+        </div>
+    </footer>
+    <!-- endfooter -->
+    <script src="../assets/main/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+body {
+    width: 100%;
+    background-image: url('../img/home.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

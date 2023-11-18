@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-img {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/test.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-text {
+    padding-top: 350px;
+    margin-right: 650px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.main-text-h {
+    font-size: 40px;
+    width: 690px;
+}
+
+.main-text-p {
+    font-size: 20px;
+    width: 720px;
+}
+
+.cards {
+    /* background-color: #030619; */
+    background-color: #06050A;
+}
+
+.cards p {
+    font-size: 18px;
+    width: 265px;
+}
+
+.sec-h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.main {
+    background-color: #06050A;
+}
+
+body{
+    background-color: #06050A;
+}
+
+.section-img {
+    margin-top: 50px;
+    width: 100%;
+    height: 65vh;
+    background-image: url('../img/acloud.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    background-color: #06050A;
+}

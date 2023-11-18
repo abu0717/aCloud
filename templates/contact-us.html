@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'main/bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/contact-us.css' %}">
+</head>
+<body>
+<header>
+    <nav>
+        <!-- here should be navbar from django -->
+    </nav>
+    <div class="contain d-flex">
+        <div class="section-header">
+
+        </div>
+        <div class="text header container">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center mt-5 section-1">
+                    <div class="form-container">
+                        <p class="title">Contact Us</p>
+                        <form class="form" method="POST" action="{% url 'contact-us' %}">{% csrf_token %}
+                            <input type="text" class="input" placeholder="First Name" name="first_name">
+                            <input type="text" class="input" placeholder="Last Name" name="last_name">
+                            <input type="email" class="input" placeholder="Email" name="email">
+                            <button class="form-btn" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+</main>
+<footer>
+    <!-- here should be footer from django -->
+</footer>
+</body>
+</html>
