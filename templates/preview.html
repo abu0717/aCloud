@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +38,7 @@
             <a href="{% url 'sign-up' %}" class="nav-link fw-bold">
                 Sign Up
             </a>
-            <a href="" class="nav-link fw-bold">
+            <a href="{% url 'login' %}" class="nav-link fw-bold">
                 Login
             </a>
         </nav>
@@ -218,6 +219,6 @@
         </div>
     </footer>
     <!-- endfooter -->
-    <script src="../assets/main/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="{% static 'main/bootstrap/js/bootstrap.bundle.js' %}"></script>
 </body>
 </html>

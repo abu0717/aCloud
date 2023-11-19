@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email</title>
+    <style>
+        .main-div {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-email img {
+            width: 500px;
+            height: 400px;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        h5 {
+            text-align: center;
+            font-size: larger;
+            font-family: 'Inter', sans-serif;
+        }
+
+        p {
+            text-align: center;
+            font-size: larger;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+<div class="main-div">
+    <div class="main-email">
+        <h2 class="text">Hello {{ first_name }} {{ last_name }}</h2>
+        <img src="https://www.cloudtalk.io/wp-content/uploads/2021/12/illustration-working-in-a-call-centrum.png"
+             alt="">
+        <h5>Thank You For Contacting With Us</h5>
+        <p>Soon Our Specialist Contacts With You</p>
+    </div>
+</div>
+</body>
+</html>
