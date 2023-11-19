@@ -10,7 +10,7 @@ def signupview(request):
     if request.method == 'POST':
         form = SignupForm(request.POST)
         if form.is_valid():
-            del form.cleaned_data['confirm password']
+            del form.cleaned_data['confirm_password']
             user = form.save(commit=False)
             user.set_password(form.cleaned_data['password'])
             user.save()
